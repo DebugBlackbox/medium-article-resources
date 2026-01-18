@@ -6,9 +6,12 @@ Supporting Resources for the written Medium Article
 .
 ├── README.md
 ├── package.json
+├── docker-compose.yaml
 ├── src
 │   ├── index.js
-│   └── app.js
+│   ├── app.js
+│   └── routes
+│       └── users.js
 └── ...
 ```
 
