@@ -6,7 +6,11 @@
   "type": "module",
   "scripts": {
     "start": "node src/index.js",
-    "dev": "nodemon src/index.js"
+    "dev": "nodemon src/index.js",
+    "migrate:create": "knex migrate:make --knexfile ./knexfile.mjs",
+    "migrate:deploy": "knex migrate:latest --knexfile ./knexfile.mjs",
+    "migrate:rollback": "knex migrate:rollback --knexfile ./knexfile.mjs",
+    "migrate:status": "knex migrate:status --knexfile ./knexfile.mjs"
   },
   "keywords": [],
   "author": "",

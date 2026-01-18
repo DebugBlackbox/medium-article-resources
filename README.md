@@ -57,5 +57,5 @@ The application connects to a PostgreSQL database using the following environmen
 - DB_PORT: The port of the database.
 
 # Instruction
-> Expected error on "/users/all" database prepared but still supporting DDL for users table not written i.e, 
-`error: select * from "users" - relation "users" does not exist`
+- Since we initialized repository with `type: module` we need to keep migration config manager `knexFile` with `.mjs` extension which then generates all migrations with `.mjs` extension
+- whatever extension we keep for `knexFile` will be used for all migrations as well. This is what it is LoL!
